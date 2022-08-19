@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Acterminal</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@300;400&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <h1>Acterminal 1.1.2</h1>
+    </header>
+    <main>
+        <section id="terminal">
+            <div id="terminal-messages"></div>
+            <div class="terminal-container">
+                <p>C:\Acterminal\v1.1.2></p>
+                <form onsubmit="return false">
+                    <input autofocus>
+                </form>
+            </div>
+        </section>
+        <section id="actors">
+            <div id="actors-header">
+                <p>Actor</p>
+                <p>Movie</p>
+            </div>
+            <div id="actors-container">
+            </div>
+        </section>
+    </main>
+    <template id="template-actor">
+        <div class="actor-box">
+            <div class="actor-top">
+                <p class="actor-name"></p>
+                <p class="actor-movie"></p>
+            </div>
+            <p class="actor-bottom">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec enim sem, maximus id
+                magna sed, porttitor efficitur metus. In feugiat neque nec posuere pretium. Morbi ultrices elit non
+                purus blandit porttitor. Duis cursus tellus sit amet libero vestibulum bibendum. Phasellus vel tempor
+                elit.</p>
+        </div>
+    </template>
+    <template id="template-startup">
+        <div class="help-message">
+            <p>Welcome to Acterminal version 1.1.2. Use <e class="command-color">help</e> for a list of commands to
+                initialise the machine.</p>
+        </div>
+    </template>
+    <template id="template-error">
+        <div class="error-message">
+            <p>Error. "<e class="input-color"></e>" is not a valid Acterminal command. Use <e class="command-color">help
+                </e> for a list of commands.</p>
+    </template>
+    <template id="template-movies">
+        <div class="help-message">
+            <p>Current movies in the database: <e class="command-color">Fight Club</e>, <e class="command-color">
+                    Goodfellas</e>, <e class="command-color">Inception</e> & <e class="command-color">Pulp Fiction</e>.
+            </p>
+        </div>
+    </template>
+    <template id="template-help">
+        <div class="help-message">
+            <div class="help-message-commands">
+                <p class="command-color">help</p>
+                <p>displays a list of commands.</p>
+            </div>
+            <div class="help-message-commands">
+                <p class="command-color">restart</p>
+                <p>restars Acterminal.</p>
+            </div>
+            <div class="help-message-commands">
+                <p class="command-color">clear</p>
+                <p>clears all previous messages.</p>
+            </div>
+            <div class="help-message-commands">
+                <p class="command-color">movies</p>
+                <p>displays possible movies to filter by.</p>
+            </div>
+            <div class="help-message-commands">
+                <p class="command-color">show actors</p>
+                <p>displays a list of all actors.</p>
+            </div>
+            <div class="help-message-commands">
+                <p class="command-color">show <e class="input-color">movie</e>
+                </p>
+                <p>displays only actors from the given movie.</p>
+            </div>
+        </div>
+    </template>
+    <script src="script.js"></script>
+</body>
+
+</html>

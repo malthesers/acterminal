@@ -1,0 +1,143 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  background-color: black;
+  min-width: 1000px;
+}
+
+header {
+  width: 100%;
+  background-color: lime;
+  position: fixed;
+}
+
+header h1 {
+  font-family: "Inconsolata", monospace;
+  font-size: 1.5rem;
+  margin: 0;
+  padding: 1rem;
+  color: black;
+  pointer-events: none;
+}
+
+p {
+  font-family: "Inconsolata", monospace;
+  font-size: 1rem;
+  font-weight: 300;
+  letter-spacing: 0.1rem;
+  color: lime;
+  margin: 0;
+}
+
+main {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 5rem 1rem;
+}
+
+#terminal {
+  margin-bottom: 1rem;
+}
+
+.terminal-container > * {
+  display: inline-block;
+}
+
+#terminal-messages {
+  pointer-events: none;
+}
+
+#terminal form input {
+  font-family: "Inconsolata", monospace;
+  font-size: 1.3rem;
+  font-weight: 300;
+  letter-spacing: 0.1rem;
+  background-color: black;
+  color: lime;
+  padding: 0;
+  margin: 0;
+  border: none;
+  outline: none;
+  width: 40rem;
+}
+
+#terminal p {
+  font-size: 1.3rem;
+}
+
+.error-message p {
+  color: red;
+  display: inline-block;
+}
+
+.help-message-commands {
+  display: grid;
+  grid-template-columns: 1fr 5fr;
+}
+
+.help-message p {
+  color: turquoise;
+}
+
+.input-color {
+  color: white !important;
+}
+
+.command-color {
+  color: yellow !important;
+}
+
+@keyframes blink {
+  0% {
+    opacity: 0%;
+  }
+
+  50% {
+    opacity: 100%;
+  }
+
+  100% {
+    opacity: 0%;
+  }
+}
+
+#actors {
+  width: 80%;
+  margin: 0 auto;
+}
+
+#actors-header {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+#actors-header p {
+  font-size: 1.3rem;
+  font-weight: 400;
+  letter-spacing: 0.2rem;
+}
+
+.actor-box {
+  cursor: pointer;
+  margin: 1rem 0;
+}
+
+.actor-top {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.actor-bottom {
+  height: auto;
+  max-height: 0;
+  margin-top: 0;
+  transition-duration: 0.5s;
+  overflow-y: hidden;
+}
