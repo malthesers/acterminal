@@ -6,4 +6,6 @@ Type around and explore the actors from my teacher's favourite movies at https:/
 
 ## Instructions
 
-Do what it says in the app.
+Type help to start.
+
+It is VERY case sensitive.
